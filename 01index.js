@@ -1,3 +1,4 @@
+// Lecture: Var let Const
 const accountId =  1234567
 let accountEmail= "aman@gmail.com"
 var password  = "1235"
