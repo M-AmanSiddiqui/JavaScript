@@ -4,7 +4,7 @@
 
 let name = "aman"
 
-let age = 18
+let age =  18
 
 let isLoggedIn = false
 
@@ -20,4 +20,8 @@ let isLoggedIn = false
 
 
 // object
-console.log(typeof null);
+console.log(typeof null); //object
+
+console.log(typeof undefined); //undefined
+
+

@@ -1,0 +1,75 @@
+
+Interview Question
+
+First Topic
+
+ 📘 JavaScript let var const Interview Notes
+
+ ✅ Q1: var, let aur const mein kya farq hota hai?
+
+ var -> function scoped hota hai
+ let  -> block scoped hota hai
+ const -> block scoped hota hai
+
+ var ko dobara declare aur assign dono kiya ja sakta hai
+ let ko dobara assign kar sakte hain, lekin dobara declare nahi kar sakte
+ const ko na dobara assign kar sakte hain, na hi declare
+
+ ✅ Example:
+if (true) {
+    var x = 10;
+    let y = 20;
+    const z = 30;
+}
+
+console.log(x);  ✅ chalega (var function scoped hota hai)
+ console.log(y);  ❌ error (let block ke bahar accessible nahi hota)
+ console.log(z);  ❌ error (const bhi block ke bahar nahi chalega)
+
+
+
+ ✅ Q2: Login ke case mein let aur const ka use kaise karte hain?
+
+ const ka use fixed values ke liye hota hai jaise: VALID_EMAIL, API_URL
+ let ka use hota hai changing values ke liye jaise: isLoggedIn, userInput
+
+
+ ✅ Q3: Simple login function jahan let aur const dono use ho
+
+function loginUser(email, password) {
+    const VALID_EMAIL = "aman@example.com";
+    const VALID_PASSWORD = "12345";
+
+    let isLoggedIn = false;
+
+    if (email === VALID_EMAIL && password === VALID_PASSWORD) {
+        isLoggedIn = true;
+        console.log("Login successful ✅");
+    } else {
+        console.log("Invalid credentials ❌");
+    }
+
+    return isLoggedIn;
+}
+
+ Example call
+let result = loginUser("aman@example.com", "12345");  ✅ true
+ let result = loginUser("wrong@abc.com", "00000");  ❌ false
+
+
+ ✅ Q4: Kya let aur const hoist hote hain?
+
+ Haan, hoist hote hain lekin Temporal Dead Zone (TDZ) mein hote hain
+ iska matlab yeh ke declaration se pehle unko access nahi kar sakte
+
+ console.log(a);  ❌ error (TDZ issue)
+let a = 10;
+
+ console.log(b);  ❌ error
+const b = 20;
+
+
+ ✅ Summary:
+ - let use karo jab value change hone wali ho
+ - const use karo jab value fix ho
+ - var ko avoid karo modern JavaScript mein
