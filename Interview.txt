@@ -3,9 +3,19 @@ Interview Question
 
 First Topic
 
+Q1: What is JavaScript?
+
+JavaScript ek high-level, interpreted programming language hai jo mainly web development mein use hoti hai.
+ Ye client-side scripting ke liye banayi gayi thi, lekin ab Node.js ki wajah se isay server-side pe bhi use kiya jata hai.
+Iska istemal hum websites ko interactive banane ke liye karte hain — jaise buttons pe click events, form validation,
+ animations, ya real-time updates bina page reload kiye.JavaScript asynchronous programming support karta hai
+  (Promises, async/await), aur ye HTML aur CSS ke sath mil ke ek complete front-end solution provide karta hai.
+
+
+
  📘 JavaScript let var const Interview Notes
 
- ✅ Q1: var, let aur const mein kya farq hota hai?
+ ✅ Q2: var, let aur const mein kya farq hota hai?
 
  var -> function scoped hota hai
  let  -> block scoped hota hai
@@ -28,13 +38,13 @@ console.log(x);  ✅ chalega (var function scoped hota hai)
 
 
 
- ✅ Q2: Login ke case mein let aur const ka use kaise karte hain?
+ ✅ Q3: Login ke case mein let aur const ka use kaise karte hain?
 
  const ka use fixed values ke liye hota hai jaise: VALID_EMAIL, API_URL
  let ka use hota hai changing values ke liye jaise: isLoggedIn, userInput
 
 
- ✅ Q3: Simple login function jahan let aur const dono use ho
+ ✅ Q4: Simple login function jahan let aur const dono use ho
 
 function loginUser(email, password) {
     const VALID_EMAIL = "aman@example.com";
@@ -57,7 +67,7 @@ let result = loginUser("aman@example.com", "12345");  ✅ true
  let result = loginUser("wrong@abc.com", "00000");  ❌ false
 
 
- ✅ Q4: Kya let aur const hoist hote hain?
+ ✅ Q5: Kya let aur const hoist hote hain?
 
  Haan, hoist hote hain lekin Temporal Dead Zone (TDZ) mein hote hain
  iska matlab yeh ke declaration se pehle unko access nahi kar sakte
