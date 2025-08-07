@@ -83,3 +83,109 @@ const b = 20;
  - let use karo jab value change hone wali ho
  - const use karo jab value fix ho
  - var ko avoid karo modern JavaScript mein
+
+
+Data Types:
+
+Perfect! Neeche sab kuch pure text format mein diya gaya hai — code blocks bhi normal text mein likhe gaye hain, taake aap easily `.txt` file mein paste kar sakein:
+
+
+
+6. JavaScript mein kitne types ke data types hote hain? Unka naam bataen.
+
+Answer:
+JavaScript mein 8 data types hote hain:
+
+Primitive Data Types:
+
+* String
+* Number
+* Boolean
+* Null
+* Undefined
+* Symbol (ES6)
+* BigInt (ES11)
+
+Non-Primitive Data Type:
+
+* Object
+
+
+
+7. Primitive aur Non-Primitive data types mein kya farq hota hai?
+
+Answer:
+
+Primitive:
+
+* Value directly store hoti hai
+* Immutable hote hain
+* Compare by value
+* Examples: number, string, boolean
+
+Non-Primitive (Reference):
+
+* Reference store hota hai
+* Mutable hote hain
+* Compare by reference
+* Examples: object, array, function
+
+
+
+8. JavaScript mein null aur undefined mein kya difference hai?
+
+Answer:
+
+undefined:
+
+* Variable declare hua hai lekin koi value assign nahi ki gayi.
+
+null:
+
+* Developer manually set karta hai jab woh batana chahta hai ke variable khaali hai.
+
+Example:
+
+let a;
+console.log(a);   // undefined
+
+let b = null;
+console.log(b);   // null
+
+
+
+9. typeof operator 'null' ke liye "object" kyun deta hai?
+
+Answer:
+Ye JavaScript ka ek purana bug hai.
+typeof null === "object" return karta hai, lekin ye sahi nahi hai.
+Backward compatibility ki wajah se isay fix nahi kiya gaya.
+
+
+
+10. JavaScript mein array kis type ka data type hai?
+
+Answer:
+Array technically object hota hai.
+
+typeof \[]        // "object"
+Array.isArray(\[]);   // true
+
+
+
+11. Symbol data type ka use kya hai?
+
+Answer:
+Symbol ek unique aur immutable primitive value hoti hai.
+Mostly object keys ko unique banane ke liye use hoti hai.
+
+Example:
+
+const id = Symbol('id');
+const user = {
+ name: 'Aman',
+ [id]: 123
+};
+console.log(user\[id]);    // 123
+
+

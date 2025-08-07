@@ -74,13 +74,18 @@
 
 
 
-console.log(null > 0); //false
-console.log(null == 0); //false
-console.log(null >= 0); //true
+// console.log(null > 0); //false
+// console.log(null == 0); //false
+ // console.log(null >= 0); //true
 
-console.log(undefined == 0); //false
-console.log(undefined > 0); //false
-console.log(undefined < 0); //false
+// console.log(undefined == 0); //false
+// console.log(undefined > 0); //false
+// console.log(undefined < 0); //false
+
+// Primitive
+// 7 Types: String, Number, Boolean, null, undefined, Symbol, BigInt
 
 
 
+// Reference (Non Primitive)
+// 3 Types: Array, Objects, function 
