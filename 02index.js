@@ -71,7 +71,13 @@
 
 // ****************************************** Comparison *******************************************************//
 
+// Primitive
+// 7 Types: String, Number, Boolean, null, undefined, Symbol, BigInt
 
+
+
+// Reference (Non Primitive)
+// 3 Types: Array, Objects, function 
 
 
 // console.log(null > 0); //false
@@ -82,10 +88,30 @@
 // console.log(undefined > 0); //false
 // console.log(undefined < 0); //false
 
-// Primitive
-// 7 Types: String, Number, Boolean, null, undefined, Symbol, BigInt
 
+// Symbol
+// const id = Symbol('1234')
+// const anotherId = Symbol('1234')
+// console.log(id == anotherId); //false
 
+ // BigInt
 
-// Reference (Non Primitive)
-// 3 Types: Array, Objects, function 
+// const bigNumber = 65746753766377687878n
+
+// Array
+
+// const hero = ["pakistan", "India" , "UK"]
+
+// Object
+ 
+// let myObj = {
+//     name: "Aman"
+//     age: "20"
+// } 
+
+//  function
+// const myFunction = function(){
+
+//     console.log("hello World");
+    
+// }
