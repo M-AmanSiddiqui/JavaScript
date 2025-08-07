@@ -115,3 +115,41 @@
 //     console.log("hello World");
     
 // }
+
+
+
+// ****************************************** Memory *******************************************************//
+
+
+// Stack (Primitive) , Heap (Non-Primitive)
+
+
+// let myYoutubename = "Amam"
+// let anotherName = myYoutubename
+// anotherName = "Siddiqui"
+
+
+// let user1 = {
+//     email: "user@gmail.com",
+//     upi: "user"
+// }
+
+// let user2 = user1
+
+
+// user2.email = "azan@gmail.com"
+// console.log(user1.email);
+// console.log(user2.email);
+
+
+// String
+
+
+const name = "aman"
+const age = 20
+console.log(name + age + " Siddiqui");
+
+console.log(`Hello My name is ${name} and my age is ${age}`);
+
+const gameName = new String("aman")
+
