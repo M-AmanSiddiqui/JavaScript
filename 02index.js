@@ -145,11 +145,10 @@
 // String
 
 
-const name = "aman"
-const age = 20
-console.log(name + age + " Siddiqui");
+// const name = "aman"
+// const age = 20
+// console.log(name + age + " Siddiqui");
 
-console.log(`Hello My name is ${name} and my age is ${age}`);
+// console.log(`Hello My name is ${name} and my age is ${age}`);
 
-const gameName = new String("aman")
 
