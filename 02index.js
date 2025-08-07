@@ -2,11 +2,11 @@
 
 "use strict";  //treat all JS code as newer version
 
-let name = "aman"
+// let name = "aman"
 
-let age =  18
+// let age =  18
 
-let isLoggedIn = false
+// let isLoggedIn = false
 
 // number    => 2 to power 53
 // bigint
@@ -25,15 +25,15 @@ let isLoggedIn = false
 // console.log(typeof undefined); //undefined
 
 
-let score = "33abc"
+// let score = "33abc"
 
-console.log(typeof score); //string 
-console.log(typeof (score)); //string 
+// console.log(typeof score); //string 
+// console.log(typeof (score)); //string 
 
 
-let valueInNumber = Number(score)
-console.log(typeof valueInNumber) //number 
-console.log(valueInNumber); // NaN 
+ // let valueInNumber = Number(score)
+// console.log(typeof valueInNumber) //number 
+// console.log(valueInNumber); // NaN 
 
 //agr hmary score varibale aesa hota  then 
 //let score = "33"
@@ -61,5 +61,14 @@ console.log(valueInNumber); // NaN
 
 
 // ****************************************** Operations ******************************************************//
+
+// let num1, num2, num3
+// num1  = num2 = num3 = 2 + 2
+// let gameCounter = 100
+// ++gameCounter
+// console.log(gameCounter);
+
+
+// ****************************************** Comparison *******************************************************//
 
 
