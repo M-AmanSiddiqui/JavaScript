@@ -1,73 +1,93 @@
-// JavaScript Number Prototype Methods & Properties
+// Number Example
+let num1 = 123.456;
 
-// 1. toString(base)
-let num1 = 255;
-console.log(num1.toString());      // "255"
-console.log(num1.toString(16));    // "ff"
-// Roman: Number ko string banata hai. Base 16 → Hexadecimal, base 2 → Binary.
+// 1. toString()
+let num_toString = num1.toString();
+console.log("1. toString():", num_toString);
+// Roman: Number ko string me convert karta hai
+// Use-case: Agar number ko string ke sath join ya display karna ho
+// Output: "123.456"
 
-// 2. toFixed(digits)
-let num2 = 3.14159;
-console.log(num2.toFixed(2));      // "3.14"
-console.log(num2.toFixed(4));      // "3.1416"
-// Roman: Number ko round karke fixed decimal digits tak dikhata hai (e.g. money).
+// 2. toExponential()
+let num_toExponential = num1.toExponential(2);
+console.log("2. toExponential(2):", num_toExponential);
+// Roman: Number ko exponential/scientific notation me convert karta hai
+// Output: "1.23e+2"
 
-// 3. toExponential(digits)
-let num3 = 12345;
-console.log(num3.toExponential(2)); // "1.23e+4"
-// Roman: Scientific (exponential) notation dikhata hai. Bara/chhota number ke liye.
+// 3. toFixed()
+let num_toFixed = num1.toFixed(2);
+console.log("3. toFixed(2):", num_toFixed);
+// Roman: Number ko specified decimal places tak round karke string return karta hai
+// Output: "123.46"
 
-// 4. toPrecision(digits)
-let num4 = 3.14159;
-console.log(num4.toPrecision(3));  // "3.14"
-console.log(num4.toPrecision(5));  // "3.1416"
-// Roman: Total digits count karta hai (decimal ke aage/peeche dono).
+// 4. toPrecision()
+let num_toPrecision = num1.toPrecision(5);
+console.log("4. toPrecision(5):", num_toPrecision);
+// Roman: Number ko total digits ke basis par round karke string return karta hai
+// Output: "123.46"
 
 // 5. valueOf()
-let num5 = new Number(100);
-console.log(num5.valueOf());       // 100
-// Roman: Number object ka primitive value return karta hai.
+let num_valueOf = num1.valueOf();
+console.log("5. valueOf():", num_valueOf);
+// Roman: Number object ka primitive value return karta hai
+// Output: 123.456
 
-// 6. Number.isInteger(x)
-console.log(Number.isInteger(10));   // true
-console.log(Number.isInteger(10.5)); // false
-// Roman: Check karta hai ke integer hai ya float.
+// 6. Number.isInteger()
+let num_isInteger = Number.isInteger(num1);
+console.log("6. Number.isInteger():", num_isInteger);
+// Roman: Check karta hai ke number integer hai ya nahi
+// Output: false
 
-// 7. Number.isNaN(x)
-console.log(Number.isNaN(NaN));      // true
-console.log(Number.isNaN(123));      // false
-// Roman: Ye NaN (Not-a-Number) check karne ke liye hai. "==" isme kaam nahi karta.
+// 7. Number.isNaN()
+let num_isNaN = Number.isNaN(NaN);
+console.log("7. Number.isNaN():", num_isNaN);
+// Roman: Check karta hai value NaN hai ya nahi
+// Output: true
 
-// 8. Number.isFinite(x)
-console.log(Number.isFinite(100));     // true
-console.log(Number.isFinite(Infinity)); // false
-// Roman: Dekhta hai ke value finite hai ya Infinite/NaN.
+// 8. Number.isFinite()
+let num_isFinite = Number.isFinite(num1);
+console.log("8. Number.isFinite():", num_isFinite);
+// Roman: Check karta hai value finite number hai ya nahi
+// Output: true
 
-// 9. Number.parseInt(str)
-console.log(Number.parseInt("123"));     // 123
-console.log(Number.parseInt("123.45"));  // 123
-// Roman: String ko integer banata hai. Decimal part cut ho jata hai.
+// 9. Number.parseInt()
+let num_parseInt = Number.parseInt("123.456");
+console.log("9. Number.parseInt('123.456'):", num_parseInt);
+// Roman: String ko integer number me convert karta hai
+// Output: 123
 
-// 10. Number.parseFloat(str)
-console.log(Number.parseFloat("123.45")); // 123.45
-// Roman: String ko float number banata hai (decimal bhi rakhta hai).
+// 10. Number.parseFloat()
+let num_parseFloat = Number.parseFloat("123.456");
+console.log("10. Number.parseFloat('123.456'):", num_parseFloat);
+// Roman: String ko float number me convert karta hai
+// Output: 123.456
 
 // 11. Number.MAX_VALUE
-console.log(Number.MAX_VALUE); // 1.7976931348623157e+308
-// Roman: JS ka sabse bara number.
+let num_max = Number.MAX_VALUE;
+console.log("11. Number.MAX_VALUE:", num_max);
+// Roman: JavaScript me maximum possible number
+// Output: 1.7976931348623157e+308
 
 // 12. Number.MIN_VALUE
-console.log(Number.MIN_VALUE); // 5e-324
-// Roman: JS ka sabse chhota positive number (0 se bara).
+let num_min = Number.MIN_VALUE;
+console.log("12. Number.MIN_VALUE:", num_min);
+// Roman: JavaScript me smallest positive number
+// Output: 5e-324
 
 // 13. Number.POSITIVE_INFINITY
-console.log(Number.POSITIVE_INFINITY); // Infinity
-// Roman: Positive infinity value.
+let num_posInf = Number.POSITIVE_INFINITY;
+console.log("13. Number.POSITIVE_INFINITY:", num_posInf);
+// Roman: Positive infinity ko represent karta hai
+// Output: Infinity
 
 // 14. Number.NEGATIVE_INFINITY
-console.log(Number.NEGATIVE_INFINITY); // -Infinity
-// Roman: Negative infinity value.
+let num_negInf = Number.NEGATIVE_INFINITY;
+console.log("14. Number.NEGATIVE_INFINITY:", num_negInf);
+// Roman: Negative infinity ko represent karta hai
+// Output: -Infinity
 
 // 15. Number.NaN
-console.log(Number.NaN); // NaN
-// Roman: Special value jo "Not a Number" ko represent karti hai.
+let num_NaN = Number.NaN;
+console.log("15. Number.NaN:", num_NaN);
+// Roman: Special value jo Not-a-Number ko represent karti hai
+// Output: NaN
