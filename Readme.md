@@ -1,6 +1,3 @@
-
-
-
 Welcome to this repository! ✨  
 
 This repo contains **almost all important JavaScript methods** with detailed explanations, examples, and outputs. It is designed for **learners, developers, and anyone preparing for JavaScript interviews**.
