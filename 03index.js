@@ -40,7 +40,7 @@ const course = {
 }
 
 const {Teacher} = course
-console.log(Teacher);
+// console.log(Teacher);
 
 
 
