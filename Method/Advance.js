@@ -213,16 +213,16 @@ console.log("1. greet.call(null,'Aman','Siddiqui'):", func_call);
 // Output: "Hello, Aman Siddiqui!"
 
 // 2️⃣ apply() -----------------
-let func_apply = greet.apply(null, ["Muskaan", "Khan"]);
-console.log("2. greet.apply(null,['Muskaan','Khan']):", func_apply);
+let func_apply = greet.apply(null, ["Aman", "Khan"]);
+console.log("2. greet.apply(null,['Aman','Khan']):", func_apply);
 //  Call jaisa hai, arguments array me pass hote hain
-// Output: "Hello, Muskaan Khan!"
+// Output: "Hello, Aman Khan!"
 
 // 3️⃣ bind() -----------------
 let func_bind = greet.bind(null, "Aman");
-console.log("3. func_bind('Muskaan'):", func_bind("Muskaan"));
+console.log("3. func_bind('Aman'):", func_bind("Aman"));
 //  Naya function return karta hai, pre-set arguments ke sath
-// Output: "Hello, Aman Muskaan!"
+// Output: "Hello, Aman Aman!"
 
 // 4️⃣ toString() -----------------
 let func_toString = greet.toString();
