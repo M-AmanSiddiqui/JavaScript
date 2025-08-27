@@ -42,11 +42,17 @@
 
 
 //expression function
-const two = function (num) {
-    return num + 3
-}
-console.log(two(5));
+// const two = function (num) {
+//     return num + 3
+// }
+// console.log(two(5));
 
 
+
+//Arrow function
+// const add = () => {
+//     console.log("ac");
+// }
+// add()
 
 
