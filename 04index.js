@@ -56,3 +56,17 @@
 // add()
 
 
+// Immediately Invoked Function Expression (IIFE)
+
+(function name(params) {
+ console.log("Connected");   
+})
+();
+
+
+
+( () => {
+ console.log("Connected");   
+})
+()
+
