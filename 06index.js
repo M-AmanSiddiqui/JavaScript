@@ -19,6 +19,8 @@
 // }
 
 
+
+
 //do while loop
 // let a = 11
 // do {
@@ -64,4 +66,18 @@
 // for each loop
 //  const programing = ["jsx","ts","py"]
 //  programing.forEach( function (item) {} )
+
+const num = [1,2,3,4,5,6,7,8,9]
+// const newnum = num.filter( (num) => {
+//    return num > 4
+// })
+
+const newnums = []
+num.forEach( () =>{
+if (num > 4){
+newnums.push(num)
+}
+})
+console.log(newnums);
+
 
