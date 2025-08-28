@@ -26,3 +26,47 @@
 // const num = [1,2,3,4,5]
 // const total = num.reduce( (acc,curr) => acc+curr, 0)
 // console.log(total);
+
+// Example with cart
+
+
+const products = [
+  {
+    id: 1,
+    name: "Laptop",
+    price: 1200,
+    category: "Electronics",
+    inStock: true
+  },
+  {
+    id: 2,
+    name: "Smartphone",
+    price: 800,
+    category: "Electronics",
+    inStock: true
+  },
+  {
+    id: 3,
+    name: "Headphones",
+    price: 150,
+    category: "Accessories",
+    inStock: false
+  },
+  {
+    id: 4,
+    name: "Keyboard",
+    price: 70,
+    category: "Accessories",
+    inStock: true
+  },
+  {
+    id: 5,
+    name: "Running Shoes",
+    price: 100,
+    category: "Fashion",
+    inStock: true
+  },]
+
+  const add = products.reduce((acc,products) => acc + products.price , 0)
+  console.log(add);
+  
