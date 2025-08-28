@@ -74,7 +74,17 @@ const products = [
 ];
 
 
-let newpro = products.filter( (pr) => {
-    return pr.category === "Fashion" && pr.price === 100
-})
-console.log(newpro);
+
+
+//with scope
+// let newpro = products.filter( (pr) => {
+//     return pr.category === "Fashion" && pr.price === 100
+// })
+// console.log(newpro);
+
+
+
+
+// Without Scope
+// let newpro = products.filter( (pr) =>  pr.category === "Fashion" && pr.price === 100)
+// console.log(newpro);
